@@ -144,17 +144,29 @@ body {
   margin-bottom: 30px;
 }
 
-.google-logo {
+/* Portfolio Logo */
+.portfolio-logo {
   font-size: 90px;
   font-weight: normal;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
+  margin-bottom: 10px;
 }
 
-.letter-g-blue { color: #4285f4; }
+.letter-p-blue { color: #4285f4; }
 .letter-o-red { color: #ea4335; }
-.letter-o-yellow { color: #fbbc05; }
-.letter-l-green { color: #34a853; }
-.letter-e-red { color: #ea4335; }
+.letter-r-yellow { color: #fbbc05; }
+.letter-t-blue { color: #4285f4; }
+.letter-f-green { color: #34a853; }
+.letter-l-purple { color: #9c27b0; }
+.letter-i-orange { color: #ff9800; }
+
+.tagline {
+  font-size: 20px;
+  color: #5f6368;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 /* Search Form */
 .search-form {
@@ -326,8 +338,12 @@ body {
     gap: 10px;
   }
   
-  .google-logo {
-    font-size: 70px;
+  .portfolio-logo {
+    font-size: 60px;
+  }
+  
+  .tagline {
+    font-size: 16px;
   }
   
   .search-form {
@@ -355,8 +371,12 @@ body {
 }
 
 @media (max-width: 480px) {
-  .google-logo {
-    font-size: 60px;
+  .portfolio-logo {
+    font-size: 50px;
+  }
+  
+  .tagline {
+    font-size: 14px;
   }
   
   .button-container {
@@ -368,4 +388,61 @@ body {
   .search-button {
     min-width: 120px;
   }
+}
+
+/* Instruments Table Styles */
+.instruments-table-container {
+  margin: 30px auto;
+  max-width: 800px; /* Increased to accommodate more columns */
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  padding: 15px;
+  background-color: white;
+  overflow-x: auto; /* For mobile responsiveness */
+}
+
+.instruments-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.instruments-table th {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px solid #f1f3f4;
+  color: #5f6368;
+  font-weight: 500;
+}
+
+.instruments-table td {
+  padding: 10px;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.instruments-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.instruments-table td:nth-child(2),
+.instruments-table td:nth-child(3),
+.instruments-table td:nth-child(4) {
+  text-align: right;
+}
+
+.instruments-table th:nth-child(2),
+.instruments-table th:nth-child(3),
+.instruments-table th:nth-child(4) {
+  text-align: right;
+}
+
+/* Additional styles for the Total column */
+.instruments-table td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: #1a73e8; /* Google blue */
+}
+
+.instruments-table th:last-child {
+  text-align: right;
 }
