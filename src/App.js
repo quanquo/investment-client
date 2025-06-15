@@ -192,15 +192,6 @@ function App() {
           </div>
         </form>
 
-        <div className="button-container">
-          <button type="submit" className="search-button" onClick={handleSearch}>
-            Portfolio Search
-          </button>
-          <button className="search-button" onClick={() => window.open('#contact', '_self')}>
-            Get In Touch
-          </button>
-        </div>
-
         {/* Instruments Table */}
         <div className="instruments-table-container">
           <table className="instruments-table">
